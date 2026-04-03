@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from 'react'
+import React from 'react'
 import {
   ArrowRight,
   BarChart3,
@@ -457,7 +458,7 @@ export default function App() {
                   </div>
                   <div className="hero-highlight">
                     <Heart size={18} />
-                    <span>Clareza estratégica para transformar presença em valor</span>
+                    <span>Trabalho 100% feito com amor pelos animais e dedicação em tudo que engloba esse meio</span>
                   </div>
                 </div>
               </div>

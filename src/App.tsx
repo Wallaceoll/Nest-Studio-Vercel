@@ -2,6 +2,7 @@ import { ReactNode, useEffect, useRef, useState } from 'react'
 import {
   ArrowRight,
   BarChart3,
+  Heart,
   Camera,
   ChevronLeft,
   ChevronRight,
@@ -455,6 +456,10 @@ export default function App() {
                   </div>
                   <div className="hero-highlight">
                     <BarChart3 size={18} />
+                    <span>Clareza estratégica para transformar presença em valor</span>
+                  </div>
+                  <div className="hero-highlight">
+                    <Heart size={18} />
                     <span>Clareza estratégica para transformar presença em valor</span>
                   </div>
                 </div>

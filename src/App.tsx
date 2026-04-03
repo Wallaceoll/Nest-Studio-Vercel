@@ -441,9 +441,6 @@ export default function App() {
                     Quero crescer agora
                     <ArrowRight size={18} />
                   </a>
-                  <a href="#portfolio" className="button button-secondary button-secondary-light">
-                    Ver portfólio
-                  </a>
                 </div>
                 <div className="hero-highlights">
                   <div className="hero-highlight">

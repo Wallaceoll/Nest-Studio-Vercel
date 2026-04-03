@@ -446,7 +446,7 @@ export default function App() {
                 <div className="hero-highlights">
                   <div className="hero-highlight">
                     <PawPrint size={18} />
-                    <span>Especialização real em pet</span>
+                    <span>Especialização real no universo pet</span>
                   </div>
                   <div className="hero-highlight">
                     <ShieldCheck size={18} />

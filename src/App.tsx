@@ -763,7 +763,7 @@ export default function App() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <div className="footer-brand">
-            <img src={assets.logo} alt="Nest Studio" className="brand-logo" />
+            <img src={assets.logo} alt="Nest Studio" className="brand-logo-footer" />
             <p>Marketing digital para o universo animal</p>
           </div>
           <div className="footer-links">

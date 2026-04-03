@@ -434,7 +434,7 @@ export default function App() {
                 <span className="eyebrow eyebrow-light">Marketing digital para o universo animal</span>
                 <h1 className="hero-title">Sua marca no mundo animal merece ser vista</h1>
                 <p className="hero-description">
-                  Somos especialistas em marketing digital para o universo pet, equestre e veterinário. Do conteúdo à conversão, cuidamos de tudo com direção visual, estratégia e presença de marca.
+                  Somos especialistas em marketing digital para o universo pet. Do conteúdo à conversão, cuidamos de tudo com direção visual, estratégia e presença de marca.
                 </p>
                 <div className="hero-actions">
                   <a href={whatsappUrl} target="_blank" rel="noreferrer" className="button button-primary">
@@ -445,7 +445,7 @@ export default function App() {
                 <div className="hero-highlights">
                   <div className="hero-highlight">
                     <PawPrint size={18} />
-                    <span>Especialização real em pet, veterinário e equestre</span>
+                    <span>Especialização real em pet</span>
                   </div>
                   <div className="hero-highlight">
                     <ShieldCheck size={18} />

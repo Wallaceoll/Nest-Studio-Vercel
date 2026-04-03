@@ -50,7 +50,7 @@ const instagramUrl = 'https://www.instagram.com/_neststudio'
 const emailUrl = 'mailto:Neststudiopet@gmail.com'
 
 const assets = {
-  logo: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-logo_4ef4861c.png'),
+  logo: '/images/LogoNest.png',
   hero: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-hero-reference-CpvZwtfwEwdpiXAoS2zkJ7.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',

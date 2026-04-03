@@ -51,7 +51,7 @@ const emailUrl = 'mailto:Neststudiopet@gmail.com'
 
 const assets = {
   logo: '/images/LogoNest.webp',
-  hero: '/images/CachorrosBebedouro.webp',
+  hero: '/images/CachorrosLivres.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',

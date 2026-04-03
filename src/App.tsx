@@ -51,7 +51,6 @@ const emailUrl = 'mailto:Neststudiopet@gmail.com'
 
 const assets = {
   logo: '/images/LogoNest.webp',
-  logoFooter: '/images/LogoNestBlack.webp',
   hero: '/images/CachorrosLivres.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
@@ -764,7 +763,7 @@ export default function App() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <div className="footer-brand">
-            <img src={assets.logoFooter} alt="Nest Studio" className="brand-logo-footer" />
+            <img src={assets.logo} alt="Nest Studio" className="brand-logo-footer" />
             <p>Marketing digital para o universo animal</p>
           </div>
           <div className="footer-links">

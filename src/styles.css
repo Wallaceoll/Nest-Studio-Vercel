@@ -176,11 +176,14 @@ button {
 
 .brand-logo {
   height: 7rem;
+  max-width: 180px;
   width: auto;
 }
 
 .brand-logo-footer {
   height: 7rem;
+  max-width: 180px;
+  width: auto;
 }
 
 .desktop-nav {

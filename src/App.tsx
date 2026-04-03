@@ -50,8 +50,8 @@ const instagramUrl = 'https://www.instagram.com/_neststudio'
 const emailUrl = 'mailto:Neststudiopet@gmail.com'
 
 const assets = {
-  logo: '/images/LogoNest.png',
-  hero: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-hero-reference-CpvZwtfwEwdpiXAoS2zkJ7.webp',
+  logo: '/images/LogoNest.webp',
+  hero: '/images/CachorrosLivres.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
@@ -426,7 +426,7 @@ export default function App() {
 
       <main>
         <section id="inicio" className="hero-section">
-          <img src={assets.hero} alt="Profissional com cachorro em ambiente premium" className="hero-background" />
+          <img src={assets.hero} alt="Cachorros em ambiente livre" className="hero-background" />
           <div className="hero-overlay" />
           <div className="hero-glow" />
           <div className="container hero-content">

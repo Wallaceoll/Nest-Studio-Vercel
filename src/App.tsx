@@ -477,7 +477,7 @@ export default function App() {
                   </article>
                   <article className="mini-card mini-card-dark">
                     <span className="mini-label">Atendimento</span>
-                    <p>São Paulo capital e para locais com mais de 20km deslocamento personalizado</p>
+                    <p>Atendemos São Paulo (capital) e regiões próximas, com deslocamento personalizado para distâncias acima de 20 km.</p>
                   </article>
                 </div>
               </div>

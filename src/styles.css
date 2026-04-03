@@ -175,8 +175,12 @@ button {
 }
 
 .brand-logo {
-  height: 2.45rem;
+  height: 3.5rem;
   width: auto;
+}
+
+.brand-logo-footer {
+  height: 3.5rem;
 }
 
 .desktop-nav {

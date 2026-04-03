@@ -161,7 +161,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.9rem 1rem;
+  padding: 0.3rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   background: rgba(16, 22, 16, 0.82);
@@ -176,13 +176,11 @@ button {
 
 .brand-logo {
   height: 7rem;
-  max-width: 180px;
   width: auto;
 }
 
 .brand-logo-footer {
   height: 7rem;
-  max-width: 180px;
   width: auto;
 }
 
@@ -946,9 +944,11 @@ button {
 }
 
 .site-footer {
-  border-top: 1px solid #d5cec0;
-  background: var(--surface);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(16, 22, 16, 0.95);
+  backdrop-filter: blur(18px);
   padding: 2rem 0;
+  color: var(--text-light);
 }
 
 .footer-inner,
@@ -972,7 +972,7 @@ button {
 .footer-links a,
 .footer-links span {
   font-size: 0.9rem;
-  color: var(--text-soft);
+  color: rgba(247, 242, 232, 0.8);
 }
 
 .footer-brand p {
@@ -989,7 +989,7 @@ button {
 }
 
 .footer-links a:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .modal-overlay {

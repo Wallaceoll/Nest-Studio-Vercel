@@ -1429,13 +1429,19 @@ button {
   }
 
   .hero-background {
-    object-position: 62% center;
+    object-fit: contain;
+    object-position: center top;
+    opacity: 0.72;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.72) 24%, rgba(0, 0, 0, 0.9) 48%, rgba(0, 0, 0, 0.96) 100%);
   }
 
   .hero-content {
     min-height: auto;
     padding-top: 5.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
   }
 
   .hero-grid {
@@ -1455,6 +1461,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     gap: 1rem;
     width: 100%;
   }
@@ -1462,6 +1469,12 @@ button {
   .images-stack .media-frame-tall {
     flex: 1 1 calc(50% - 0.5rem);
     max-width: 205px;
+    aspect-ratio: 0.78 / 1;
+    overflow: hidden;
+  }
+
+  .images-stack .media-frame-tall img {
+    height: 100%;
   }
   
   .stack-grid {

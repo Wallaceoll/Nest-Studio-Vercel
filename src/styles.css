@@ -930,45 +930,66 @@ button {
   color: var(--text-light);
 }
 
-.footer-inner,
-.footer-brand,
-.footer-links {
-  display: flex;
-  gap: 1rem;
-}
-
 .footer-inner {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .footer-brand {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-brand p,
-.footer-links,
-.footer-links a,
-.footer-links span {
-  font-size: 0.9rem;
-  color: rgba(247, 242, 232, 0.8);
+  gap: 0.5rem;
+  text-align: center;
 }
 
 .footer-brand p {
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: rgba(247, 242, 232, 0.7);
+  margin: 0;
 }
 
-.footer-links {
+.footer-contact-links {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.footer-links a {
-  transition: color 220ms ease;
+.footer-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(247, 242, 232, 0.9);
+  transition: all 220ms ease;
+  font-size: 0.85rem;
 }
 
-.footer-links a:hover {
+.footer-contact-item:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.footer-contact-item svg {
+  flex-shrink: 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(247, 242, 232, 0.5);
+  margin-top: 0.5rem;
 }
 
 .modal-overlay {
@@ -1129,6 +1150,26 @@ button {
   .testimonial-card {
     min-width: 48%;
   }
+
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-brand {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .footer-contact-links {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .footer-copyright {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1192,20 +1233,6 @@ button {
   .testimonial-card {
     min-width: 31.5%;
   }
-
-  .footer-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.4rem;
-    justify-content: flex-end;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1247,6 +1274,15 @@ button {
   
   .testimonial-quote {
     font-size: 1rem;
+  }
+
+  .footer-brand {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-contact-item {
+    width: 100%;
+    justify-content: center;
   }
 }
 

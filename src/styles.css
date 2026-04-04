@@ -1207,8 +1207,8 @@ button {
   }
 
   .header-bar {
+    justify-content: space-around;
     padding: 1rem 2rem;
-    max-width: 100%;
   }
 
   .hero-grid,
@@ -1312,6 +1312,14 @@ button {
 
   .header-bar {
     padding: 0.75rem 1rem;
+  }
+
+  .brand-logo {
+    height: 2rem;
+  }
+
+  .header-cta {
+    display: none;
   }
 
 }

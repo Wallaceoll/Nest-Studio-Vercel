@@ -1351,6 +1351,78 @@ button {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  #servicos.section {
+    padding: 3.25rem 0 3rem;
+  }
+
+  #servicos .content-stack-lg {
+    gap: 1.25rem;
+  }
+
+  #servicos .services-header {
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 1rem;
+  }
+
+  #servicos .section-intro {
+    max-width: 31rem;
+  }
+
+  #servicos .section-title {
+    font-size: clamp(2.1rem, 3vw, 2.9rem);
+    line-height: 0.92;
+  }
+
+  #servicos .section-description {
+    margin-top: 0.85rem;
+    font-size: 0.9rem;
+    line-height: 1.58;
+  }
+
+  #servicos .media-frame img {
+    min-height: 11.5rem;
+    max-height: 14rem;
+  }
+
+  #servicos .services-grid {
+    gap: 0.75rem;
+  }
+
+  #servicos .service-card {
+    padding: 1rem;
+    border-radius: 1.65rem;
+  }
+
+  #servicos .service-description {
+    margin-top: 0.65rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  #servicos .service-items {
+    gap: 0.5rem;
+  }
+
+  #servicos .service-item {
+    gap: 0.65rem;
+    padding: 0.62rem 0.72rem;
+    border-radius: 1rem;
+    font-size: 0.67rem;
+    letter-spacing: 0.1em;
+  }
+
+  #servicos .service-item-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #servicos .service-item-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;

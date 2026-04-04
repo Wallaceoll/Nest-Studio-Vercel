@@ -61,7 +61,7 @@ const assets = {
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
-  institutional: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7639_da63531d.JPG'),
+  institutional: '/images/vet.webp',
   equestrian: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
   petPortrait: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_0004_833ba8e6.JPG'),
   petLifestyle: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7291_a6a213f9.JPG'),
@@ -502,10 +502,7 @@ export default function App() {
               />
               <div className="body-copy">
                 <p>
-                  A Nest cria imagem, direciona comunicação e gerencia presença digital para marcas, clínicas, pet shops, creches, profissionais autônomos do mercado pet e pets influencers que desejam evoluir.
-                </p>
-                <p>
-                  Transformamos presença em reconhecimento, consistência em valor e trabalho em autoridade. Cada decisão visual é pensada para fortalecer percepção de qualidade e facilitar conversão.
+                   A Nest cria imagem, direciona comunicação e gerencia presença digital para marcas, clínicas, pet shops, creches, profissionais autônomos do mercado pet e pets influencers que desejam evoluir. Transformamos presença em reconhecimento, consistência em valor e trabalho em autoridade. Cada decisão visual é pensada para fortalecer percepção de qualidade e facilitar conversão.
                 </p>
               </div>
             </div>

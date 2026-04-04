@@ -538,6 +538,14 @@ button {
   line-height: 1.95;
 }
 
+#sobre .content-stack {
+  gap: 0.4rem;
+}
+
+#sobre .body-copy p {
+  margin: 0;
+}
+
 .media-frame,
 .service-card,
 .panel,
@@ -1229,6 +1237,10 @@ button {
     grid-template-columns: minmax(0, 1fr) 24rem;
   }
 
+  .hero-grid {
+    align-items: end;
+  }
+
   .two-column-grid {
     grid-template-columns: 0.92fr 1.08fr;
     align-items: start;
@@ -1344,14 +1356,7 @@ button {
   }
 }
 
-@media (min-width: 1200px) {
-  .hero-grid {
-    grid-template-columns: minmax(0, 1fr) 24rem;
-    align-items: end;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1599px) {
   #servicos.section {
     padding: 3.25rem 0 3rem;
   }
@@ -1423,7 +1428,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-section {
     min-height: 100svh;
   }
@@ -1527,7 +1532,7 @@ button {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .about-grid {
     grid-template-columns: 0.6fr 1.4fr;
   }

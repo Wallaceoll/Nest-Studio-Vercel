@@ -1339,3 +1339,177 @@ button {
     gap: 1rem;
   }
 }
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero-section {
+    min-height: 85vh;
+  }
+
+  .hero-content {
+    min-height: 85vh;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero-title {
+    font-size: clamp(4rem, 6vw, 7rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    max-width: 50rem;
+    line-height: 2.2;
+  }
+
+  .hero-actions .button {
+    min-height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+  }
+
+  .hero-highlights {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+
+  .hero-highlight {
+    gap: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .hero-highlight svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .glass-card {
+    padding: 2rem;
+  }
+
+  .glass-card p {
+    font-size: 1.2rem;
+  }
+
+  .mini-card {
+    padding: 1.8rem;
+  }
+
+  .mini-card p {
+    font-size: 1.2rem;
+  }
+
+  .brand-logo {
+    height: 3.5rem;
+  }
+
+  .desktop-nav-link {
+    font-size: 1.05rem;
+  }
+
+  .header-cta {
+    min-height: 3.8rem;
+    padding: 0 1.8rem;
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 7rem 0;
+  }
+
+  .section-title {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    max-width: 48rem;
+  }
+
+  .panel {
+    padding: 2rem;
+  }
+
+  .panel p {
+    font-size: 1.05rem;
+  }
+
+  .service-card {
+    padding: 2rem;
+  }
+
+  .service-description {
+    font-size: 1.05rem;
+  }
+
+  .service-item {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .service-item-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .service-item-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .niche-pill {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .step-card {
+    padding: 2rem;
+  }
+
+  .step-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .step-card p {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-card {
+    padding: 1.8rem;
+  }
+
+  .testimonial-quote {
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+  }
+
+  .testimonial-author {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+  }
+
+  .footer-contact-item {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+
+  .images-stack .media-frame-tall {
+    max-width: 320px;
+  }
+}

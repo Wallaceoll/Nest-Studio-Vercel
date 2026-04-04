@@ -5,9 +5,9 @@
   --background: #f3efe5;
   --surface: #f7f2e8;
   --surface-soft: #efe6d7;
-  --surface-deep: #171d17;
-  --surface-deeper: #101610;
-  --text: #171c17;
+  --surface-deep: #0f0f0f;
+  --surface-deeper: #080808;
+  --text: #111;
   --text-soft: #4a534b;
   --text-muted: #6e776f;
   --text-light: #f7f2e8;
@@ -293,7 +293,8 @@ button {
 }
 
 .hero-overlay {
-  background: linear-gradient(90deg, rgba(8, 12, 9, 0.92) 0%, rgba(8, 12, 9, 0.86) 34%, rgba(8, 12, 9, 0.42) 64%, rgba(8, 12, 9, 0.18) 100%);
+   background: linear-gradient(90deg,rgba(0, 0, 0, 0.92),rgba(0, 0, 0, 0.86),rgba(0, 0, 0, 0.42),rgba(0, 0, 0, 0.18)
+  );
 }
 
 .hero-glow {

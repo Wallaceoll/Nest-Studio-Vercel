@@ -1445,7 +1445,7 @@ button {
 
 @media (max-width: 767px) {
   .hero-section {
-    min-height: auto;
+    min-height: 100svh;
   }
 
   .hero-media-desktop,
@@ -1460,13 +1460,14 @@ button {
   }
 
   .hero-content {
-    min-height: auto;
+    min-height: 100svh;
     padding-top: 5.5rem;
     padding-bottom: 3.5rem;
   }
 
   .hero-grid {
     gap: 2rem;
+    min-height: 100%;
   }
 
   .hero-aside {

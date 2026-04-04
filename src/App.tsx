@@ -688,12 +688,12 @@ export default function App() {
             />
             <HorizontalRail>
               {testimonials.map((item, index) => (
-                <article className="testimonial-card">
-                  <img src={item.image} alt="Depoimento cliente" className="testimonial-image" />
-                  <p className="testimonial-quote">
-                    “{item.quote}”
-                  </p>
-                  <span className="testimonial-author">{item.author}</span>
+                <article key={index} className="testimonial-card">
+                  <div className="testimonial-header">
+                    <img src={item.image} alt="Depoimento cliente" className="testimonial-image" />
+                    <span className="testimonial-author">{item.author}</span>
+                  </div>
+                  <p className="testimonial-quote">“{item.quote}”</p>
                 </article>
               ))}
             </HorizontalRail>

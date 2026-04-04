@@ -1247,6 +1247,14 @@ button {
   }
 
   .process-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  .process-intro {
     align-self: center;
     padding-top: 0;
   }

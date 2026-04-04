@@ -40,8 +40,9 @@ type ServiceGroup = {
 }
 
 type Testimonial = {
-  segment: string
+  image: string
   quote: string
+  author: string
 }
 
 const safeUrl = (url: string) => encodeURI(url)
@@ -52,14 +53,15 @@ const emailUrl = 'mailto:Neststudiopet@gmail.com'
 const assets = {
   logo: '/images/LogoNest.webp',
   hero: '/images/CachorrosLivres.webp',
+  vet: '/images/vet.webp',
+  petStudio: '/images/petStudio.webp',
+  petStudioCliente: '/images/petStudioCliente.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
   institutional: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7639_da63531d.JPG'),
   equestrian: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
-  vet: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7754_03d28b6c.JPG'),
   petPortrait: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_0004_833ba8e6.JPG'),
-  petStudio: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_0236_47e5dd0a.JPG'),
   petLifestyle: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7291_a6a213f9.JPG'),
   playMoment: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7352_67c07b8b.JPG'),
   vetRoutine: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7871_00129510.JPG'),
@@ -256,20 +258,23 @@ const portfolio: MediaItem[] = [
 
 const testimonials: Testimonial[] = [
   {
-    segment: 'Clínica veterinária em São Paulo',
+    image: assets.vet,
     quote:
-      'Não tem como falar que não ficou perfeita a edição, ficou maravilhoso, perfeito, ta perfeito, ficou igualzinho aos documentários que eu assistia. Fiquei presa assistindo o video, exatamente do jeito que eu queria @meldvet',
+      'Não tem como falar que não ficou perfeita a edição, ficou maravilhoso, perfeito, ta perfeito, ficou igualzinho aos documentários que eu assistia. Fiquei presa assistindo o video, exatamente do jeito que eu queria',
+    author: '@meldvet',
   },
   {
-    segment: 'Marca do mercado pet',
+    image: assets.petStudio,
     quote:
-      'Sério, ficou bom demais. Dá pra ver que vocês tiveram um cuidado real na edição, tudo encaixa e flui muito bem. O vídeo prende, não fica cansativo e ainda passa a mensagem de um jeito claro e que realmente faz a gente pensar. Esse tipo de conteúdo faz diferença mesmo, fiquei bem feliz com o resultado. Mandaram muito bem  @_universofelino',
+      'Sério, ficou bom demais. Dá pra ver que vocês tiveram um cuidado real na edição...',
+    author: '@_universofelino',
   },
   {
-    segment: 'Negócio do universo equestre',
+    image: assets.petStudioCliente,
     quote:
-      'Gente, que foto linda! Sério, abriu até um sorriso aqui quando vi. Tá muito bem cuidada, com uma vibe leve e gostosa, daquelas que a gente olha e já sente que ficou especial. Deu pra ver o carinho na edição, ficou incrível mesmo @lidiameggiolaro',
-  }
+      'Gente, que foto linda! abriu até um sorriso aqui quando vi...',
+    author: '@lidiameggiolaro',
+  },
 ]
 
 const steps = [
@@ -682,10 +687,12 @@ export default function App() {
               light
             />
             <HorizontalRail>
-              {testimonials.map((item) => (
-                <article key={item.segment} className="testimonial-card">
-                  <span className="eyebrow eyebrow-light">{item.segment}</span>
-                  <p>“{item.quote}”</p>
+              {testimonials.map((item, index) => (
+                <article className="testimonial-card">
+                  <img src={item.image} className="testimonial-image" />
+                  <p className="testimonial-quote">
+                    “{item.quote}”
+                  </p>
                 </article>
               ))}
             </HorizontalRail>

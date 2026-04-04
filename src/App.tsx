@@ -54,6 +54,7 @@ const assets = {
   logo: '/images/LogoNest.webp',
   hero: '/images/CachorrosLivres.webp',
   vetGroup: '/images/meuLiVet.webp',
+  professores: '/images/professores.webp',
   vet: '/images/vet.webp',
   petStudio: '/images/petStudio.webp',
   petStudioCliente: '/images/petStudioCliente.webp',
@@ -503,30 +504,28 @@ export default function App() {
               />
               <div className="body-copy">
                 <p>
-                   A Nest cria imagem, direciona comunicação e gerencia presença digital para marcas, clínicas, pet shops, creches, profissionais autônomos do mercado pet e pets influencers que desejam evoluir. Transformamos presença em reconhecimento, consistência em valor e trabalho em autoridade. Cada decisão visual é pensada para fortalecer percepção de qualidade e facilitar conversão.
+                  A Nest cria imagem, direciona comunicação e gerencia presença digital para marcas, clínicas, pet shops, creches, profissionais autônomos do mercado pet e pets influencers que desejam evoluir. Transformamos presença em reconhecimento, consistência em valor e trabalho em autoridade. Cada decisão visual é pensada para fortalecer percepção de qualidade e facilitar conversão.
                 </p>
               </div>
             </div>
 
             <div className="about-grid">
-              <article className="media-frame media-frame-tall">
-                <img src={assets.vetGroup} alt="Registro institucional da Nest Studio com cliente" />
-              </article>
+              <div className="images-stack">
+                <article className="media-frame media-frame-tall">
+                  <img src={assets.vetGroup} alt="Equipe veterinária Nest Studio" />
+                </article>
+                <article className="media-frame media-frame-tall">
+                  <img src={assets.professores} alt="Equipe de treinadores Nest Studio" />
+                </article>
+              </div>
               <div className="stack-grid">
                 <article className="panel panel-dark">
                   <span className="eyebrow eyebrow-light">Posicionamento</span>
                   <p>Comunicação com identidade própria para quem precisa ser lembrado com autoridade e sensibilidade.</p>
                 </article>
                 <article className="panel panel-warm">
-                  <span className="eyebrow">Mercado</span>
-                  <p>Especialização em nichos onde repertório visual, confiança e proximidade fazem diferença real.</p>
-                </article>
-                <article className="panel panel-soft">
-                  <div className="panel-icon">
-                    <PawPrint size={18} />
-                    <span>Mercado animal</span>
-                  </div>
-                  <p>Clareza de posicionamento para marcas, clínicas e negócios que precisam crescer com coerência visual.</p>
+                  <span className="eyebrow">Mercado Pet</span>
+                  <p>Clareza de posicionamento para marcas, clínicas e negócios que precisam crescer com coerência visual, além da especialização em nichos onde repertório visual, confiança e proximidade fazem toda a diferença.</p>
                 </article>
               </div>
             </div>
@@ -594,7 +593,6 @@ export default function App() {
             </div>
           </div>
         </section>
-
 
         <section id="videos" className="section section-light">
           <div className="container content-stack-lg">

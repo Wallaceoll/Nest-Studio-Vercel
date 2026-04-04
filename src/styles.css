@@ -153,7 +153,8 @@ button {
   position: relative;
   z-index: 40;
   background: var(--surface-deep);
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .header-bar {
@@ -162,7 +163,7 @@ button {
   justify-content: space-between;
   gap: 1rem;
   background: var(--surface-deep);
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 
 .brand-link {
@@ -272,7 +273,7 @@ button {
 
 .hero-section {
   position: relative;
-  min-height: 90vh;
+  min-height: 75vh;
   overflow: hidden;
   background: var(--surface-deeper);
   color: var(--text-light);
@@ -305,9 +306,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  padding-top: 7rem;
-  padding-bottom: 4rem;
+  min-height: 75vh;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .hero-grid {

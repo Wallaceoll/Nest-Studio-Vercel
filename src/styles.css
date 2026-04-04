@@ -517,7 +517,6 @@ button {
 .panel,
 .media-card,
 .step-card,
-.differential-card,
 .testimonial-card,
 .contact-card,
 .modal-service {
@@ -555,7 +554,6 @@ button {
 .services-grid,
 .service-items,
 .niches-grid,
-.differentials-grid,
 .steps-grid,
 .contact-grid {
   display: grid;
@@ -655,33 +653,6 @@ button {
 .niche-pill svg {
   color: var(--accent);
   flex: 0 0 auto;
-}
-
-.differentials-grid {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.differential-card {
-  padding: 1.5rem;
-  background: #171d17;
-  color: rgba(230, 223, 210, 0.95);
-}
-
-.differential-card p {
-  margin: 1rem 0 0;
-  font-size: 1rem;
-  line-height: 1.9;
-}
-
-.differential-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 999px;
-  background: var(--primary);
-  color: #fff;
 }
 
 .rail-wrap {
@@ -1198,9 +1169,6 @@ button {
   .contact-grid,
   .services-grid,
   .steps-grid,
-  .differentials-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .services-header,
   .about-grid,
@@ -1282,9 +1250,6 @@ button {
   }
 
   .services-grid,
-  .differentials-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 
   .contact-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));

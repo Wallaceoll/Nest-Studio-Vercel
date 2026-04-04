@@ -493,11 +493,14 @@ button {
   gap: 2.5rem;
 }
 
-.two-column-grid,
+.two-column-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .dark-feature-grid,
 .process-grid,
 .services-header,
-.about-grid,
 .cta-block,
 .modal-grid {
   display: grid;
@@ -542,10 +545,6 @@ button {
   object-fit: cover;
 }
 
-.media-frame-tall img {
-  min-height: 26rem;
-}
-
 .media-frame-dark {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -560,14 +559,38 @@ button {
   gap: 1rem;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.media-frame-tall {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.media-frame-tall img {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+}
+
 .panel {
   padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .panel p {
   margin: 1rem 0 0;
   font-size: 1rem;
   line-height: 1.9;
+  flex: 1;
 }
 
 .panel-dark {
@@ -1167,11 +1190,18 @@ button {
   .services-grid,
   .steps-grid,
   .services-header,
-  .about-grid,
   .cta-block,
   .process-grid,
   .modal-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-grid {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .media-card,
@@ -1208,10 +1238,6 @@ button {
   .services-header {
     grid-template-columns: 0.82fr 1.18fr;
     align-items: end;
-  }
-
-  .about-grid {
-    grid-template-columns: 1.2fr 0.8fr;
   }
 
   .dark-feature-grid {
@@ -1278,6 +1304,18 @@ button {
 }
 
 @media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .media-frame-tall {
+    max-width: 200px;
+  }
+  
   .testimonial-image {
     width: 50px;
     height: 50px;
@@ -1302,6 +1340,16 @@ button {
   
   .contact-grid {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 0.6fr 1.4fr;
+  }
+  
+  .stack-grid {
+    grid-template-columns: 1fr;
   }
 }
 

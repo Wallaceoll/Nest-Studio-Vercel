@@ -118,13 +118,6 @@ const niches = [
   'Marcas Pet',
 ]
 
-const differentials = [
-  'Especialistas no universo animal',
-  'Conteúdo com identidade e direção visual consistente',
-  'Estratégia guiada por leitura de mercado e posicionamento',
-  'Atendimento direto, próximo e focado em conversão',
-]
-
 const featuredVideos: MediaItem[] = [
   {
     title: 'Apresentação institucional veterinária',
@@ -604,18 +597,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section section-cream compact-top">
-          <div className="container differentials-grid">
-            {differentials.map((item) => (
-              <article key={item} className="differential-card">
-                <div className="differential-icon">
-                  <ShieldCheck size={18} />
-                </div>
-                <p>{item}</p>
-              </article>
-            ))}
-          </div>
-        </section>
 
         <section id="videos" className="section section-light">
           <div className="container content-stack-lg">

@@ -61,7 +61,7 @@ const assets = {
   anestesiaVet: '/images/anestesiaVet.webp',
   equestrianSport: '/images/equestrianSport.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
-  niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
+  hipismo: '/images/hipismo.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
   institutional: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
   equestrian: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
@@ -573,7 +573,7 @@ export default function App() {
         <section className="section section-dark">
           <div className="container dark-feature-grid">
             <article className="media-frame media-frame-dark">
-              <img src={assets.niches} alt="Profissional com cavalo em ambiente equestre premium" />
+              <img src={assets.hipismo} alt="Profissional com cavalo em ambiente equestre premium" />
             </article>
             <div className="content-stack">
               <SectionIntro

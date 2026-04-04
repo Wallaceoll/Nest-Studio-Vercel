@@ -1,3 +1,4 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -884,19 +885,31 @@ button {
   line-height: 1.9;
 }
 
+#contato {
+  padding: 0;
+}
+
+#contato .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 .cta-block {
   overflow: hidden;
   background: #171d17;
   color: var(--text-light);
-  border-radius: 2.2rem;
-  box-shadow: var(--shadow-strong);
+  border-radius: 0;
+  box-shadow: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  min-height: 100vh;
 }
 
 .cta-copy {
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -905,7 +918,7 @@ button {
 .cta-copy h2 {
   margin: 1rem 0 0;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 1.1;
   color: #fff;
 }
@@ -915,13 +928,14 @@ button {
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(221, 216, 206, 0.9);
+  max-width: 90%;
 }
 
 .cta-actions {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.9rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -952,7 +966,8 @@ button {
 }
 
 .cta-media {
-  min-height: 22rem;
+  min-height: 100%;
+  height: 100%;
 }
 
 .cta-media img {
@@ -1294,13 +1309,19 @@ button {
 @media (max-width: 1024px) {
   .cta-block {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
   
   .cta-media {
-    min-height: 300px;
+    min-height: 400px;
   }
   
   .cta-copy {
     padding: 2rem;
   }
+  
+  .cta-copy p {
+    max-width: 100%;
+  }
 }
+```

@@ -266,13 +266,13 @@ const testimonials: Testimonial[] = [
   {
     image: assets.petStudio,
     quote:
-      'Sério, ficou bom demais. Dá pra ver que vocês tiveram um cuidado real na edição...',
+      'Sério, ficou bom demais. Dá pra ver que vocês tiveram um cuidado real na edição, tudo encaixa e flui muito bem. O vídeo prende, não fica cansativo e ainda passa a mensagem de um jeito claro e que realmente faz a gente pensar. Esse tipo de conteúdo faz diferença mesmo, fiquei bem feliz com o resultado. Mandaram muito bem!',
     author: '@_universofelino',
   },
   {
     image: assets.petStudioCliente,
     quote:
-      'Gente, que foto linda! abriu até um sorriso aqui quando vi...',
+      'Gente, que foto linda! Sério, abriu até um sorriso aqui quando vi. Tá muito bem cuidada, com uma vibe leve e gostosa, daquelas que a gente olha e já sente que ficou especial. Deu pra ver o carinho na edição, ficou incrível mesmo!',
     author: '@lidiameggiolaro',
   },
 ]
@@ -689,10 +689,11 @@ export default function App() {
             <HorizontalRail>
               {testimonials.map((item, index) => (
                 <article className="testimonial-card">
-                  <img src={item.image} className="testimonial-image" />
+                  <img src={item.image} alt="Depoimento cliente" className="testimonial-image" />
                   <p className="testimonial-quote">
                     “{item.quote}”
                   </p>
+                  <span className="testimonial-author">{item.author}</span>
                 </article>
               ))}
             </HorizontalRail>

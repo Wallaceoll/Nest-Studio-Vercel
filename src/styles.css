@@ -1243,11 +1243,12 @@ button {
   .process-grid {
     grid-template-columns: minmax(18rem, 0.92fr) minmax(0, 1.08fr);
     gap: clamp(2rem, 4vw, 4rem);
-    align-items: start;
+    align-items: center;
   }
 
   .process-intro {
-    padding-top: 0.35rem;
+    align-self: center;
+    padding-top: 0;
   }
 
   .process-grid .steps-grid {

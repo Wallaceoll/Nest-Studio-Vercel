@@ -288,6 +288,11 @@ button {
   color: var(--text-light);
 }
 
+.hero-media-desktop {
+  position: absolute;
+  inset: 0;
+}
+
 .hero-background,
 .hero-overlay,
 .hero-glow {
@@ -300,6 +305,16 @@ button {
   height: 100%;
   object-fit: cover;
   opacity: 0.95;
+}
+
+.hero-media-mobile {
+  display: none;
+}
+
+.hero-mobile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1.75rem;
 }
 
 .hero-overlay {
@@ -1430,21 +1445,22 @@ button {
 
 @media (max-width: 767px) {
   .hero-section {
-    min-height: 100svh;
+    min-height: auto;
   }
 
-  .hero-background {
-    object-fit: cover;
-    object-position: 52% center;
-    opacity: 0.88;
+  .hero-media-desktop,
+  .hero-overlay,
+  .hero-glow {
+    display: none;
   }
 
-  .hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.68) 28%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.88) 100%);
+  .hero-media-mobile {
+    display: block;
+    margin-top: 2rem;
   }
 
   .hero-content {
-    min-height: 100svh;
+    min-height: auto;
     padding-top: 5.5rem;
     padding-bottom: 3.5rem;
   }

@@ -307,15 +307,17 @@ function SectionIntro({
   eyebrow,
   title,
   description,
+  className,
   light = false,
 }: {
   eyebrow: string
   title: string
   description: string
+  className?: string
   light?: boolean
 }) {
   return (
-    <div className="section-intro">
+    <div className={`section-intro${className ? ` ${className}` : ''}`}>
       <span className={`eyebrow${light ? ' eyebrow-light' : ''}`}>{eyebrow}</span>
       <h2 className={`section-title${light ? ' section-title-light' : ''}`}>{title}</h2>
       <p className={`section-description${light ? ' section-description-light' : ''}`}>{description}</p>
@@ -695,6 +697,7 @@ export default function App() {
               eyebrow="Como funciona"
               title="Simples, rápido e eficiente"
               description="Um processo pensado para facilitar a tomada de decisão, acelerar o início do projeto e manter estratégia com execução alinhada."
+              className="process-intro"
             />
             <div className="steps-grid">
               {steps.map((step, index) => (

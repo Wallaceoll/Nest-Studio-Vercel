@@ -472,6 +472,10 @@ button {
   max-width: 46rem;
 }
 
+.process-intro {
+  max-width: 34rem;
+}
+
 .section-title {
   margin: 0.9rem 0 0;
   font-family: 'Cormorant Garamond', serif;
@@ -1233,8 +1237,17 @@ button {
   }
 
   .process-grid {
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: minmax(18rem, 0.92fr) minmax(0, 1.08fr);
+    gap: clamp(2rem, 4vw, 4rem);
     align-items: start;
+  }
+
+  .process-intro {
+    padding-top: 0.35rem;
+  }
+
+  .process-grid .steps-grid {
+    align-content: start;
   }
 
   .modal-grid {

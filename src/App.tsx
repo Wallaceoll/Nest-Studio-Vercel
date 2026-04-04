@@ -53,6 +53,7 @@ const emailUrl = 'mailto:Neststudiopet@gmail.com'
 const assets = {
   logo: '/images/LogoNest.webp',
   hero: '/images/CachorrosLivres.webp',
+  vetGroup: '/images/meuLiVet.webp',
   vet: '/images/vet.webp',
   petStudio: '/images/petStudio.webp',
   petStudioCliente: '/images/petStudioCliente.webp',
@@ -61,7 +62,7 @@ const assets = {
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
-  institutional: '/images/vet.webp',
+  institutional: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
   equestrian: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
   petPortrait: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_0004_833ba8e6.JPG'),
   petLifestyle: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_7291_a6a213f9.JPG'),
@@ -509,7 +510,7 @@ export default function App() {
 
             <div className="about-grid">
               <article className="media-frame media-frame-tall">
-                <img src={assets.institutional} alt="Registro institucional da Nest Studio com cliente" />
+                <img src={assets.vetGroup} alt="Registro institucional da Nest Studio com cliente" />
               </article>
               <div className="stack-grid">
                 <article className="panel panel-dark">

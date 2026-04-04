@@ -476,6 +476,10 @@ button {
   max-width: 34rem;
 }
 
+.portfolio-intro {
+  max-width: 52rem;
+}
+
 .section-title {
   margin: 0.9rem 0 0;
   font-family: 'Cormorant Garamond', serif;

@@ -635,6 +635,7 @@ export default function App() {
               eyebrow="Portfólio"
               title="Resultados que falam por si"
               description="Projetos reais desenvolvidos para o mercado animal, com mistura de fotografia, vídeos, peças para redes e construção de posicionamento visual."
+              className="portfolio-intro"
             />
             <HorizontalRail>
               {portfolio.map((item) => (

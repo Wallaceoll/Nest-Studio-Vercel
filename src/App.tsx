@@ -258,23 +258,18 @@ const testimonials: Testimonial[] = [
   {
     segment: 'Clínica veterinária em São Paulo',
     quote:
-      'A comunicação ficou muito mais clara, elegante e alinhada com o que entregamos no atendimento. O resultado foi uma presença digital que finalmente parece nossa.',
+      'Não tem como falar que não ficou perfeita a edição, ficou maravilhoso, perfeito, ta perfeito, ficou igualzinho aos documentários que eu assistia. Fiquei presa assistindo o video, exatamente do jeito que eu queria @meldvet',
   },
   {
     segment: 'Marca do mercado pet',
     quote:
-      'O olhar estratégico fez diferença desde a estética até a forma de apresentar os serviços. Hoje a marca transmite mais consistência e profissionalismo.',
+      'Sério, ficou bom demais. Dá pra ver que vocês tiveram um cuidado real na edição, tudo encaixa e flui muito bem. O vídeo prende, não fica cansativo e ainda passa a mensagem de um jeito claro e que realmente faz a gente pensar. Esse tipo de conteúdo faz diferença mesmo, fiquei bem feliz com o resultado. Mandaram muito bem  @_universofelino',
   },
   {
     segment: 'Negócio do universo equestre',
     quote:
-      'A Nest conseguiu traduzir um nicho específico com sensibilidade e autoridade. O conteúdo ficou refinado, coerente e com linguagem muito mais forte.',
-  },
-  {
-    segment: 'Profissional autônoma do setor animal',
-    quote:
-      'O processo foi direto, organizado e muito próximo. A sensação é de ter estratégia de verdade por trás de cada imagem e de cada conteúdo publicado.',
-  },
+      'Gente, que foto linda! Sério, abriu até um sorriso aqui quando vi. Tá muito bem cuidada, com uma vibe leve e gostosa, daquelas que a gente olha e já sente que ficou especial. Deu pra ver o carinho na edição, ficou incrível mesmo @lidiameggiolaro',
+  }
 ]
 
 const steps = [

@@ -56,6 +56,8 @@ const assets = {
   vet: '/images/vet.webp',
   petStudio: '/images/petStudio.webp',
   petStudioCliente: '/images/petStudioCliente.webp',
+  anestesiaVet: '/images/anestesiaVet.webp',
+  equestrianSport: '/images/equestrianSport.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   niches: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-niches-equestrian-NF2hUXQvXuqh2YdPRm8NoL.webp',
   cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
@@ -274,6 +276,18 @@ const testimonials: Testimonial[] = [
     quote:
       'Gente, que foto linda! Sério, abriu até um sorriso aqui quando vi. Tá muito bem cuidada, com uma vibe leve e gostosa, daquelas que a gente olha e já sente que ficou especial. Deu pra ver o carinho na edição, ficou incrível mesmo!',
     author: '@lidiameggiolaro',
+  },
+  {
+    image: assets.anestesiaVet,
+    quote:
+      'Tem momentos na rotina que pedem silêncio, foco e muito coração.Enquanto tudo parece técnico por fora, existe cuidado em cada detalhe, respeito por cada vida e uma responsabilidade enorme nas mãos. É por isso que eu escolhi estar aqui: pra cuidar de quem não pode dizer o que sente, mas confia tudo na gente Registro lindo da  _neststudio',
+    author: '@vetbeatriznardi',
+  },
+  {
+    image: assets.equestrianSport,
+    quote:
+      'Com enorme prazer que a BCC SPORT HORSE inicia uma nova iornada com a _neststudio , um pouco do nosso primeiro trabalho juntos. Muito obrigado pelc trabalho incrível de todas vocês.',
+    author: '@bccsporthorse',
   },
 ]
 

@@ -1322,6 +1322,9 @@ button {
     display: none;
   }
 
+  .hero-content {
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

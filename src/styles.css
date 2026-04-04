@@ -151,8 +151,8 @@ button {
 
 .site-header {
   position: relative;
-  inset: 0 0 auto;
   z-index: 40;
+  background: var(--surface-deep);
   padding-top: 1rem;
 }
 
@@ -161,12 +161,8 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.3rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 999px;
-  background: rgba(16, 22, 16, 0.82);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(18px);
+  background: var(--surface-deep);
+  padding: 0.5rem 0;
 }
 
 .brand-link {
@@ -191,7 +187,7 @@ button {
 }
 
 .desktop-nav-link {
-  color: rgba(247, 242, 232, 0.92);
+  color: var(--text-light);
   font-size: 0.94rem;
   font-weight: 600;
   transition: color 220ms ease;
@@ -202,7 +198,7 @@ button {
 }
 
 .header-cta {
-  display: none;
+  display: inline-flex;
 }
 
 .mobile-menu-button {

@@ -272,7 +272,7 @@ button {
 
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow: hidden;
   background: var(--surface-deeper);
   color: var(--text-light);
@@ -304,7 +304,7 @@ button {
   position: relative;
   display: flex;
   align-items: flex-end;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 7rem;
   padding-bottom: 4rem;
 }

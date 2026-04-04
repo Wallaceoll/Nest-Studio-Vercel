@@ -1425,23 +1425,23 @@ button {
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: auto;
+    min-height: 100svh;
   }
 
   .hero-background {
-    object-fit: contain;
-    object-position: center top;
-    opacity: 0.72;
+    object-fit: cover;
+    object-position: 52% center;
+    opacity: 0.88;
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.72) 24%, rgba(0, 0, 0, 0.9) 48%, rgba(0, 0, 0, 0.96) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.68) 28%, rgba(0, 0, 0, 0.78) 62%, rgba(0, 0, 0, 0.88) 100%);
   }
 
   .hero-content {
-    min-height: auto;
+    min-height: 100svh;
     padding-top: 5.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3.5rem;
   }
 
   .hero-grid {
@@ -1451,6 +1451,15 @@ button {
   .hero-aside {
     gap: 1.15rem;
     padding-bottom: 0.75rem;
+  }
+
+  #sobre .container {
+    width: min(var(--container), calc(100% - 1.25rem));
+  }
+
+  #sobre .body-copy {
+    font-size: 0.95rem;
+    line-height: 1.72;
   }
 
   .about-grid {

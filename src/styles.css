@@ -1205,6 +1205,10 @@ button {
     width: min(var(--container), calc(100% - 4rem));
   }
 
+  #servicos.section {
+    padding: 4rem 0 3.75rem;
+  }
+
   .desktop-nav,
   .header-cta {
     display: inline-flex;
@@ -1282,38 +1286,56 @@ button {
   }
 
   #servicos .content-stack-lg {
-    gap: 2rem;
+    gap: 1.6rem;
   }
 
   #servicos .section-intro {
     max-width: 34rem;
   }
 
+  #servicos .section-title {
+    font-size: clamp(2.35rem, 3.4vw, 3.25rem);
+  }
+
+  #servicos .section-description {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.72;
+  }
+
   #servicos .media-frame img {
-    min-height: 16rem;
-    max-height: 20rem;
+    min-height: 13.5rem;
+    max-height: 16.5rem;
   }
 
   #servicos .service-card {
-    padding: 1.45rem;
+    padding: 1.2rem;
   }
 
   #servicos .service-description {
-    line-height: 1.75;
+    margin-top: 0.75rem;
+    font-size: 0.94rem;
+    line-height: 1.62;
   }
 
   #servicos .service-items {
-    gap: 0.75rem;
+    gap: 0.6rem;
   }
 
   #servicos .service-item {
-    padding: 0.85rem 0.9rem;
-    font-size: 0.76rem;
+    gap: 0.75rem;
+    padding: 0.72rem 0.8rem;
+    font-size: 0.71rem;
   }
 
   #servicos .service-item-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  #servicos .service-item-icon svg {
+    width: 16px;
+    height: 16px;
   }
 
   .media-card,
@@ -1408,6 +1430,10 @@ button {
 @media (min-width: 1600px) {
   .container {
     max-width: 1400px;
+  }
+
+  #servicos.section {
+    padding: 4.75rem 0 4.5rem;
   }
 
   .hero-section {
@@ -1509,16 +1535,25 @@ button {
   }
 
   #servicos .content-stack-lg {
-    gap: 2.25rem;
+    gap: 1.9rem;
+  }
+
+  #servicos .section-title {
+    font-size: clamp(2.6rem, 3vw, 3.6rem);
+  }
+
+  #servicos .section-description {
+    font-size: 1rem;
+    line-height: 1.76;
   }
 
   #servicos .media-frame img {
-    min-height: 17rem;
-    max-height: 21rem;
+    min-height: 14.5rem;
+    max-height: 18rem;
   }
 
   #servicos .service-card {
-    padding: 1.65rem;
+    padding: 1.4rem;
   }
 
   .service-description {
@@ -1526,8 +1561,8 @@ button {
   }
 
   #servicos .service-description {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
 
   .service-item {
@@ -1536,8 +1571,9 @@ button {
   }
 
   #servicos .service-item {
-    padding: 0.95rem 1rem;
-    font-size: 0.8rem;
+    gap: 0.8rem;
+    padding: 0.8rem 0.9rem;
+    font-size: 0.75rem;
   }
 
   .service-item-icon {
@@ -1546,8 +1582,8 @@ button {
   }
 
   #servicos .service-item-icon {
-    width: 2.65rem;
-    height: 2.65rem;
+    width: 2.3rem;
+    height: 2.3rem;
   }
 
   .service-item-icon svg {
@@ -1556,8 +1592,8 @@ button {
   }
 
   #servicos .service-item-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   .niche-pill {

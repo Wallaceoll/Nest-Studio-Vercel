@@ -87,14 +87,7 @@ const services: ServiceGroup[] = [
       { icon: PenTool, label: 'Roteirização' },
     ],
   },
-  {
-    title: 'Conteúdo',
-    description: 'Planejamento e rotina editorial para manter a sua marca relevante, coerente e memorável.',
-    items: [
-      { icon: Clapperboard, label: 'Conteúdo para Redes' },
-      { icon: MessageCircle, label: 'Gestão de Redes' },
-    ],
-  },
+  
   {
     title: 'Performance',
     description: 'Estratégia aplicada para posicionar melhor sua marca, atrair os clientes certos e sustentar conversão.',
@@ -103,6 +96,14 @@ const services: ServiceGroup[] = [
       { icon: Target, label: 'Estudo de Público' },
       { icon: Video, label: 'Propagandas Comerciais' },
       { icon: MapPin, label: 'Google Meu Negócio' },
+    ],
+  },
+  {
+    title: 'Conteúdo',
+    description: 'Planejamento e rotina editorial para manter a sua marca relevante, coerente e memorável.',
+    items: [
+      { icon: Clapperboard, label: 'Conteúdo para Redes' },
+      { icon: MessageCircle, label: 'Gestão de Redes' },
     ],
   },
 ]

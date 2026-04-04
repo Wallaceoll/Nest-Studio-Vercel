@@ -53,6 +53,7 @@ const emailUrl = 'mailto:Neststudiopet@gmail.com'
 const assets = {
   logo: '/images/LogoNest.webp',
   hero: '/images/CachorrosLivres.webp',
+  heroMobile: '/images/CachorroLivreMobile.webp',
   vetGroup: '/images/meuLiVet.webp',
   professores: '/images/professores.webp',
   vet: '/images/vet.webp',
@@ -436,7 +437,10 @@ export default function App() {
 
       <main>
         <section id="inicio" className="hero-section">
-          <img src={assets.hero} alt="Cachorros bebendo agua" className="hero-background" />
+          <picture>
+            <source media="(max-width: 767px)" srcSet={assets.heroMobile} />
+            <img src={assets.hero} alt="Cachorros bebendo agua" className="hero-background" />
+          </picture>
           <div className="hero-overlay" />
           <div className="hero-glow" />
           <div className="container hero-content">

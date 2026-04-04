@@ -307,16 +307,6 @@ button {
   opacity: 0.95;
 }
 
-.hero-media-mobile {
-  display: none;
-}
-
-.hero-mobile-image {
-  width: 100%;
-  height: auto;
-  border-radius: 1.75rem;
-}
-
 .hero-overlay {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1));
 }
@@ -1448,15 +1438,13 @@ button {
     min-height: 100svh;
   }
 
-  .hero-media-desktop,
-  .hero-overlay,
-  .hero-glow {
-    display: none;
+  .hero-background {
+    object-position: center center;
+    opacity: 0.9;
   }
 
-  .hero-media-mobile {
-    display: block;
-    margin-top: 2rem;
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.7) 24%, rgba(0, 0, 0, 0.8) 58%, rgba(0, 0, 0, 0.9) 100%);
   }
 
   .hero-content {

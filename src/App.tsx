@@ -438,7 +438,10 @@ export default function App() {
       <main>
         <section id="inicio" className="hero-section">
           <div className="hero-media-desktop" aria-hidden="true">
-            <img src={assets.hero} alt="Cachorros se divertindo" className="hero-background" />
+            <picture>
+              <source media="(max-width: 767px)" srcSet={assets.heroMobile} />
+              <img src={assets.hero} alt="Cachorros se divertindo" className="hero-background" />
+            </picture>
           </div>
           <div className="hero-overlay" />
           <div className="hero-glow" />
@@ -455,9 +458,6 @@ export default function App() {
                     Quero crescer agora
                     <ArrowRight size={18} />
                   </a>
-                </div>
-                <div className="hero-media-mobile">
-                  <img src={assets.heroMobile} alt="Cachorros bebendo agua" className="hero-mobile-image" />
                 </div>
                 <div className="hero-highlights">
                   <div className="hero-highlight">

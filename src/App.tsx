@@ -715,14 +715,17 @@ export default function App() {
             <img src={assets.logo} alt="Nest Studio" className="brand-logo-footer" />
             <p>Marketing digital para o universo animal</p>
           </div>
-          <div className="footer-links">
-            <a href={instagramUrl} target="_blank" rel="noreferrer">
-              Instagram
+          <div className="footer-contact-links">
+            <a href={instagramUrl} target="_blank" rel="noreferrer" className="footer-contact-item">
+              <Instagram size={18} />
+              <span>@_neststudio</span>
             </a>
-            <a href={emailUrl}>Email</a>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">
-              WhatsApp
+            <a href={emailUrl} className="footer-contact-item">
+              <Mail size={18} />
+              <span>Neststudiopet@gmail.com</span>
             </a>
+          </div>
+          <div className="footer-copyright">
             <span>© 2026 Nest Studio. Todos os direitos reservados.</span>
           </div>
         </div>

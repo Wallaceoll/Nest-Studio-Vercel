@@ -62,7 +62,6 @@ const assets = {
   equestrianSport: '/images/equestrianSport.webp',
   services: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-services-editorial-m5hybHWD3CZ3SztH9z9D6F.webp',
   hipismo: '/images/hipismo.webp',
-  cta: 'https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/nest-cta-conversion-nsmvfisngUjiYMyFLdFPun.webp',
   institutional: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
   equestrian: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_8818_9a026b41.JPG'),
   petPortrait: safeUrl('https://d2xsxph8kpxj0f.cloudfront.net/310419663031337946/PQVYgYjmNTckYyZr4Cs7Jh/IMG_0004_833ba8e6.JPG'),
@@ -77,7 +76,6 @@ const navigation = [
   { label: 'Serviços', href: '#servicos' },
   { label: 'Vídeos', href: '#videos' },
   { label: 'Portfólio', href: '#portfolio' },
-  { label: 'Contato', href: '#contato' },
 ]
 
 const services: ServiceGroup[] = [
@@ -706,49 +704,6 @@ export default function App() {
                   <p>{step.description}</p>
                 </article>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="contato" className="section section-cream">
-          <div className="container">
-            <div className="cta-block">
-              <div className="cta-copy">
-                <span className="eyebrow eyebrow-light">CTA final</span>
-                <h2>Pronto para levar sua marca ao próximo nível?</h2>
-                <p>
-                  Fale com a gente e descubra como transformar sua presença digital com posicionamento, imagem e estratégia. Atendimento em São Paulo capital. Para regiões acima de vinte quilômetros, a taxa de deslocamento é personalizada.
-                </p>
-                <div className="cta-actions">
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="button button-primary">
-                    WhatsApp
-                    <ArrowRight size={18} />
-                  </a>
-                  <a href={instagramUrl} target="_blank" rel="noreferrer" className="button button-secondary button-secondary-light">
-                    Instagram
-                  </a>
-                  <a href={emailUrl} className="button button-secondary button-secondary-light">
-                    Email
-                  </a>
-                </div>
-                <div className="contact-grid">
-                  <a href={whatsappUrl} target="_blank" rel="noreferrer" className="contact-card">
-                    <MessageCircle size={18} />
-                    <span>WhatsApp</span>
-                  </a>
-                  <a href={instagramUrl} target="_blank" rel="noreferrer" className="contact-card">
-                    <Instagram size={18} />
-                    <span>@_neststudio</span>
-                  </a>
-                  <a href={emailUrl} className="contact-card">
-                    <Mail size={18} />
-                    <span>Neststudiopet@gmail.com</span>
-                  </a>
-                </div>
-              </div>
-              <div className="cta-media">
-                <img src={assets.cta} alt="Profissional em ambiente premium com cachorro e smartphone" />
-              </div>
             </div>
           </div>
         </section>

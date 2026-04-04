@@ -293,7 +293,7 @@ button {
 }
 
 .hero-overlay {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.18));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
 .hero-glow {

@@ -1486,7 +1486,7 @@ button {
     gap: 0.8rem;
     min-height: 100%;
     align-content: start;
-    transform: translateY(-1.35rem);
+    transform: translateY(-1.7rem);
   }
 
   .hero-copy {
@@ -1494,6 +1494,11 @@ button {
     border-radius: 1.4rem;
     background: linear-gradient(180deg, rgba(10, 14, 10, 0.18), rgba(10, 14, 10, 0.08));
     backdrop-filter: blur(6px);
+  }
+
+  .hero-copy .eyebrow {
+    font-size: 0.66rem;
+    letter-spacing: 0.18em;
   }
 
   .hero-copy .eyebrow,
@@ -1505,13 +1510,14 @@ button {
   }
 
   .hero-title {
-    font-size: clamp(2.75rem, 11vw, 4rem);
-    line-height: 0.96;
+    font-size: clamp(2.35rem, 9.5vw, 3.35rem);
+    line-height: 0.98;
   }
 
   .hero-description {
-    font-size: 1.02rem;
-    line-height: 1.8;
+    margin-top: 1rem;
+    font-size: 0.94rem;
+    line-height: 1.65;
     color: rgba(255, 248, 239, 0.96);
   }
 
@@ -1520,6 +1526,11 @@ button {
     margin-top: 0.55rem;
     padding-top: 0.65rem;
     border-top-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .hero-highlight {
+    font-size: 0.92rem;
+    line-height: 1.5;
   }
 
   .hero-aside {

@@ -1492,10 +1492,10 @@ button {
 
   .hero-aside {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.6rem;
     align-items: stretch;
-    width: min(11.5rem, 100%);
+    width: min(22rem, 100%);
     margin: 0 auto;
     padding-bottom: 0.15rem;
   }
@@ -1512,8 +1512,12 @@ button {
   }
 
   .hero-mini-grid {
-    display: grid;
+    display: contents;
     gap: 0.6rem;
+  }
+
+  .hero-mini-grid .mini-card:last-child {
+    grid-column: 1 / -1;
   }
 
   .mini-card {

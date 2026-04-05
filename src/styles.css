@@ -1455,7 +1455,7 @@ button {
   .hero-background-fill {
     object-position: center 28%;
     opacity: 0.5;
-    filter: blur(8px);
+    filter: blur(4px);
     transform: scale(1.06);
   }
 

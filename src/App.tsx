@@ -53,7 +53,7 @@ const emailUrl = 'mailto:Neststudiopet@gmail.com'
 const assets = {
   logo: '/images/LogoNest.webp',
   hero: '/images/CachorrosLivres.webp',
-  heroMobile: '/images/CachorroLivreMobile.jpg',
+  heroMobile: '/images/cachorroLivreMobile.PNG',
   vetGroup: '/images/meuLiVet.webp',
   professores: '/images/professores.webp',
   vet: '/images/vet.webp',

@@ -293,6 +293,12 @@ button {
   inset: 0;
 }
 
+.hero-media-desktop picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-background,
 .hero-overlay,
 .hero-glow {
@@ -304,7 +310,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.95;
+  object-position: center;
 }
 
 .hero-overlay {
@@ -1439,7 +1445,7 @@ button {
   }
 
   .hero-background {
-    object-position: center center;
+    object-position: center 35%;
     opacity: 0.9;
   }
 

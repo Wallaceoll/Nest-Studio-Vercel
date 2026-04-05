@@ -440,8 +440,9 @@ export default function App() {
           <div className="hero-media-desktop" aria-hidden="true">
             <picture>
               <source media="(max-width: 767px)" srcSet={assets.heroMobile} />
-              <img src={assets.hero} alt="Cachorros se divertindo" className="hero-background" />
+              <img src={assets.hero} alt="Cachorros se divertindo" className="hero-background hero-background-fill" />
             </picture>
+            <img src={assets.heroMobile} alt="" className="hero-background-mobile-full" />
           </div>
           <div className="hero-overlay" />
           <div className="hero-glow" />

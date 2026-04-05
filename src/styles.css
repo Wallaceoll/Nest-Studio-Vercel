@@ -1454,8 +1454,8 @@ button {
 
   .hero-background-fill {
     object-position: center 16%;
-    opacity: 0.3;
-    filter: blur(1px);
+    opacity: 0.42;
+    filter: blur(5px);
     transform: scale(1.06);
   }
 
@@ -1467,11 +1467,13 @@ button {
     height: 100%;
     object-fit: contain;
     object-position: center bottom;
+    opacity: 0.9;
+    filter: blur(0.8px);
     padding: 0.5rem 0 0;
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.12) 52%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.18) 52%, rgba(0, 0, 0, 0.34) 100%);
   }
 
   .hero-content {
@@ -1485,10 +1487,37 @@ button {
     min-height: 100%;
   }
 
+  .hero-copy {
+    padding: 0.9rem 0.8rem 0;
+    border-radius: 1.4rem;
+    background: linear-gradient(180deg, rgba(10, 14, 10, 0.18), rgba(10, 14, 10, 0.08));
+    backdrop-filter: blur(6px);
+  }
+
+  .hero-copy .eyebrow,
+  .hero-title,
+  .hero-description,
+  .hero-highlight,
+  .hero-highlight span {
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.38);
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 11vw, 4rem);
+    line-height: 0.96;
+  }
+
+  .hero-description {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: rgba(255, 248, 239, 0.96);
+  }
+
   .hero-highlights {
     gap: 0.75rem;
     margin-top: 0.85rem;
     padding-top: 0.85rem;
+    border-top-color: rgba(255, 255, 255, 0.22);
   }
 
   .hero-aside {
@@ -1505,6 +1534,8 @@ button {
   .glass-card {
     padding: 0.8rem 0.65rem;
     border-radius: 1.2rem;
+    background: rgba(18, 24, 18, 0.18);
+    border-color: rgba(255, 255, 255, 0.18);
   }
 
   .glass-card p {
@@ -1525,6 +1556,8 @@ button {
   .mini-card {
     padding: 0.8rem 0.65rem;
     border-radius: 1.2rem;
+    background: rgba(18, 24, 18, 0.18);
+    border-color: rgba(255, 255, 255, 0.18);
   }
 
   .mini-card p {

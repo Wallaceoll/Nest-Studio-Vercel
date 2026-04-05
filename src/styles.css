@@ -1471,7 +1471,7 @@ button {
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.5) 24%, rgba(0, 0, 0, 0.46) 55%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.14) 20%, rgba(0, 0, 0, 0.22) 52%, rgba(0, 0, 0, 0.46) 100%);
   }
 
   .hero-content {
@@ -1486,39 +1486,47 @@ button {
   }
 
   .hero-aside {
-    gap: 0.85rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+    align-items: stretch;
     padding-bottom: 0.25rem;
   }
 
   .glass-card {
-    padding: 1rem;
-    border-radius: 1.6rem;
+    padding: 0.85rem 0.7rem;
+    border-radius: 1.2rem;
   }
 
   .glass-card p {
-    margin-top: 0.75rem;
-    font-size: 0.96rem;
-    line-height: 1.65;
+    margin-top: 0.5rem;
+    font-size: 0.76rem;
+    line-height: 1.45;
   }
 
   .hero-mini-grid {
-    gap: 0.85rem;
+    display: contents;
   }
 
   .mini-card {
-    padding: 1rem;
-    border-radius: 1.6rem;
+    padding: 0.85rem 0.7rem;
+    border-radius: 1.2rem;
   }
 
   .mini-card p {
-    margin-top: 0.55rem;
-    font-size: 0.96rem;
-    line-height: 1.55;
+    margin-top: 0.5rem;
+    font-size: 0.76rem;
+    line-height: 1.4;
   }
 
   .mini-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.18em;
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+  }
+
+  .hero-aside .eyebrow {
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
   }
 
   #sobre .container {

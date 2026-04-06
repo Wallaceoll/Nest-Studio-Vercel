@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Menu } from 'lucide-react'
 
 import type { NavigationItem } from '../../types/content'
@@ -11,6 +12,23 @@ type HeaderProps = {
 }
 
 export function Header({ logoSrc, navigation, whatsappUrl, onOpenMenu }: HeaderProps) {
+  const [showDesktopCta, setShowDesktopCta] = useState(() => window.innerWidth >= 1024)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)')
+
+    const updateDesktopCta = (event: MediaQueryList | MediaQueryListEvent) => {
+      setShowDesktopCta(event.matches)
+    }
+
+    updateDesktopCta(mediaQuery)
+    mediaQuery.addEventListener('change', updateDesktopCta)
+
+    return () => {
+      mediaQuery.removeEventListener('change', updateDesktopCta)
+    }
+  }, [])
+
   return (
     <header className={styles['site-header']}>
       <div className="container">
@@ -27,9 +45,11 @@ export function Header({ logoSrc, navigation, whatsappUrl, onOpenMenu }: HeaderP
             ))}
           </nav>
 
-          <a href={whatsappUrl} target="_blank" rel="noreferrer" className={`button button-primary ${styles['header-cta']}`}>
-            Falar no WhatsApp
-          </a>
+          {showDesktopCta ? (
+            <a href={whatsappUrl} target="_blank" rel="noreferrer" className={`button button-primary ${styles['header-cta']}`}>
+              Falar no WhatsApp
+            </a>
+          ) : null}
 
           <button type="button" className={styles['mobile-menu-button']} onClick={onOpenMenu} aria-label="Abrir menu">
             <Menu size={20} />

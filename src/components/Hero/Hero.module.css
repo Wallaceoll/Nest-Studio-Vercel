@@ -212,10 +212,10 @@
   }
 
   .hero-background-fill {
-    object-position: center 16%;
-    opacity: 0.42;
-    filter: blur(5px);
-    transform: scale(1.06);
+    object-position: center 22%;
+    opacity: 0.36;
+    filter: blur(6px);
+    transform: scale(1.12);
   }
 
   .hero-background-mobile-full {
@@ -223,12 +223,14 @@
     inset: 0;
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    opacity: 0.9;
+    height: 112%;
+    object-fit: cover;
+    object-position: center 78%;
+    opacity: 0.96;
     filter: blur(0.8px);
-    padding: 0.5rem 0 0;
+    transform: scale(1.08);
+    transform-origin: center bottom;
+    padding: 0;
   }
 
   .hero-overlay {
@@ -237,15 +239,15 @@
 
   .hero-content {
     min-height: 100svh;
-    padding-top: 3.9rem;
-    padding-bottom: 3rem;
+    padding-top: 3.5rem;
+    padding-bottom: 2.2rem;
   }
 
   .hero-grid {
-    gap: 0.8rem;
+    gap: 1rem;
     min-height: 100%;
     align-content: start;
-    transform: translateY(-1.7rem);
+    transform: translateY(-1rem);
   }
 
   .hero-copy {

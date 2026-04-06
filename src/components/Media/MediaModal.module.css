@@ -1,0 +1,129 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(13, 19, 14, 0.88);
+  backdrop-filter: blur(12px);
+}
+
+.modal-shell {
+  position: relative;
+  width: min(100%, 76rem);
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+  border-radius: 2rem;
+  background: var(--surface);
+  box-shadow: 0 40px 110px rgba(0, 0, 0, 0.38);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(23, 28, 23, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--text);
+}
+
+.modal-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+}
+
+.modal-media {
+  background: #111711;
+}
+
+.modal-media img,
+.modal-media video {
+  width: 100%;
+  height: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.modal-copy {
+  padding: 1.6rem;
+}
+
+.modal-copy h3 {
+  margin: 1rem 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 0.94;
+  color: var(--text);
+}
+
+.modal-copy p {
+  margin: 1.3rem 0 0;
+  font-size: 1rem;
+  line-height: 1.95;
+  color: var(--text-soft);
+}
+
+.modal-service {
+  margin-top: 1.6rem;
+  padding: 1.35rem;
+  background: var(--surface-soft);
+  color: #554339;
+}
+
+.modal-service span {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+
+.modal-service strong {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 640px) {
+  .modal-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal-grid {
+    grid-template-columns: 1.25fr 0.75fr;
+  }
+
+  .modal-media img,
+  .modal-media video {
+    max-height: calc(100vh - 2rem);
+  }
+}

@@ -1,0 +1,40 @@
+.dark-feature-grid,
+.niches-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.niche-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.35rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(247, 242, 232, 0.92);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.niche-pill svg {
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .dark-feature-grid {
+    grid-template-columns: 1fr 1.05fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1600px) {
+  .niche-pill {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

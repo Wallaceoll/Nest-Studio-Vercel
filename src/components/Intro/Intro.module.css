@@ -1,0 +1,61 @@
+.section-intro {
+  max-width: 46rem;
+}
+
+.process-intro {
+  max-width: 34rem;
+}
+
+.portfolio-intro {
+  max-width: 52rem;
+}
+
+.section-title {
+  margin: 0.9rem 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.7rem, 5vw, 4rem);
+  line-height: 0.94;
+  color: var(--text);
+}
+
+.section-title-light {
+  color: var(--text-light);
+}
+
+.section-description {
+  margin: 1.2rem 0 0;
+  max-width: 42rem;
+  font-size: 1rem;
+  line-height: 1.95;
+  color: var(--text-soft);
+}
+
+.section-description-light {
+  color: rgba(230, 223, 210, 0.9);
+}
+
+@media (min-width: 1024px) {
+  .process-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  .process-intro {
+    align-self: center;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .section-title {
+    font-size: clamp(3rem, 4vw, 4.5rem);
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    max-width: 48rem;
+  }
+}

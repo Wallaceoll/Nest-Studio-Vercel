@@ -3,20 +3,8 @@
   gap: 1.5rem;
 }
 
-.body-copy {
-  display: grid;
-  gap: 0;
-  color: var(--text-soft);
-  font-size: 1rem;
-  line-height: 1.95;
-}
-
 #sobre :global(.content-stack) {
   gap: 0.4rem;
-}
-
-#sobre .body-copy p {
-  margin: 0;
 }
 
 .about-grid {
@@ -67,11 +55,6 @@
 @media (max-width: 767px) {
   #sobre :global(.container) {
     width: min(var(--container), calc(100% - 1.25rem));
-  }
-
-  #sobre .body-copy {
-    font-size: 0.95rem;
-    line-height: 1.72;
   }
 
   .about-grid {

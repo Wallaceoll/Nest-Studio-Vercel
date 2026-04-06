@@ -11,13 +11,8 @@ export function About() {
           <Intro
             eyebrow="Sobre nós"
             title="Paixão pelo universo animal com visão de marca"
-            description="Nascemos da paixão pelos animais e da expertise em marketing digital. Marcas não crescem por acaso. Elas são construídas com estratégia, visão e posicionamento."
+            description="Nascemos da paixão pelos animais e da expertise em marketing digital. Marcas não crescem por acaso. Elas são construídas com estratégia, visão e posicionamento. A Nest cria imagem, direciona comunicação e gerencia presença digital para marcas, clínicas, pet shops, creches, profissionais autônomos do mercado pet e pets influencers que desejam evoluir. Transformamos presença em reconhecimento, consistência em valor e trabalho em autoridade. Cada decisão visual é pensada para fortalecer percepção de qualidade e facilitar conversão."
           />
-          <div className={styles['body-copy']}>
-            <p>
-              A Nest cria imagem, direciona comunicação e gerencia presença digital para marcas, clínicas, pet shops, creches, profissionais autônomos do mercado pet e pets influencers que desejam evoluir. Transformamos presença em reconhecimento, consistência em valor e trabalho em autoridade. Cada decisão visual é pensada para fortalecer percepção de qualidade e facilitar conversão.
-            </p>
-          </div>
         </div>
 
         <div className={styles['about-grid']}>

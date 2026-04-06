@@ -204,7 +204,7 @@
 
 @media (max-width: 767px) {
   .hero-section {
-    min-height: 132svh;
+    min-height: 138svh;
   }
 
   .hero-media-desktop {
@@ -236,9 +236,9 @@
   }
 
   .hero-content {
-    min-height: 132svh;
+    min-height: 138svh;
     padding-top: 3.4rem;
-    padding-bottom: 6.8rem;
+    padding-bottom: 7.4rem;
   }
 
   .hero-grid {

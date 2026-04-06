@@ -52,7 +52,7 @@
 }
 
 .header-cta {
-  display: inline-flex;
+  display: none;
 }
 
 .mobile-menu-button {
@@ -130,10 +130,6 @@
 
   .brand-logo {
     height: 2rem;
-  }
-
-  .header-cta {
-    display: none;
   }
 }
 

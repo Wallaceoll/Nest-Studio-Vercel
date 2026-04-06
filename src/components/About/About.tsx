@@ -7,7 +7,7 @@ export function About() {
   return (
     <section id="sobre" className="section section-cream">
       <div className={`container ${styles['two-column-grid']}`}>
-        <div className="content-stack">
+        <div className={styles['about-copy']}>
           <Intro
             eyebrow="Sobre nós"
             title="Paixão pelo universo animal com visão de marca"

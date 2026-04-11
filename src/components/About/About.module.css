@@ -86,12 +86,13 @@
   .images-stack .media-frame-tall {
     flex: 1 1 calc(50% - 0.5rem);
     max-width: 205px;
-    aspect-ratio: 0.78 / 1;
-    overflow: hidden;
+    aspect-ratio: auto;
   }
 
   .images-stack .media-frame-tall img {
-    height: 100%;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
   }
 }
 

@@ -1,19 +1,22 @@
-import { Play } from 'lucide-react'
+import { Play } from "lucide-react";
 
-import { portfolio } from '../../data/siteContent'
-import type { MediaItem } from '../../types/content'
-import { Intro } from '../Intro/Intro'
-import { Rail } from '../Rail/Rail'
+import { portfolio } from "../../data/siteContent";
+import { useReveal } from "../../hooks/useReveal";
+import type { MediaItem } from "../../types/content";
+import { Intro } from "../Intro/Intro";
+import { Rail } from "../Rail/Rail";
 
-import mediaStyles from '../Media/MediaCards.module.css'
+import mediaStyles from "../Media/MediaCards.module.css";
 
 type PortfolioProps = {
-  onSelectMedia: (item: MediaItem) => void
-}
+  onSelectMedia: (item: MediaItem) => void;
+};
 
 export function Portfolio({ onSelectMedia }: PortfolioProps) {
+  const ref = useReveal<HTMLElement>();
+
   return (
-    <section id="portfolio" className="section section-cream">
+    <section ref={ref} id="portfolio" className="section section-cream reveal">
       <div className="container content-stack-lg">
         <Intro
           eyebrow="Portfólio"
@@ -23,14 +26,23 @@ export function Portfolio({ onSelectMedia }: PortfolioProps) {
         />
         <Rail>
           {portfolio.map((item) => (
-            <article key={`${item.title}-${item.service}`} className={mediaStyles['media-card']}>
-              <button type="button" className={mediaStyles['media-card-button']} onClick={() => onSelectMedia(item)}>
-                <div className={`${mediaStyles['media-thumb']} ${mediaStyles['media-thumb-dark']}`}>
-                  {item.kind === 'video' ? (
+            <article
+              key={`${item.title}-${item.service}`}
+              className={mediaStyles["media-card"]}
+            >
+              <button
+                type="button"
+                className={mediaStyles["media-card-button"]}
+                onClick={() => onSelectMedia(item)}
+              >
+                <div
+                  className={`${mediaStyles["media-thumb"]} ${mediaStyles["media-thumb-dark"]}`}
+                >
+                  {item.kind === "video" ? (
                     <>
                       <img src={item.cover} alt={item.title} />
-                      <div className={mediaStyles['media-thumb-overlay']} />
-                      <div className={mediaStyles['media-badge']}>
+                      <div className={mediaStyles["media-thumb-overlay"]} />
+                      <div className={mediaStyles["media-badge"]}>
                         <Play size={14} />
                         <span>Vídeo</span>
                       </div>
@@ -39,11 +51,15 @@ export function Portfolio({ onSelectMedia }: PortfolioProps) {
                     <img src={item.src} alt={item.title} />
                   )}
                 </div>
-                <div className={mediaStyles['media-body']}>
+                <div className={mediaStyles["media-body"]}>
                   <span className="eyebrow">{item.tag}</span>
-                  <h3 className={mediaStyles['media-title']}>{item.title}</h3>
-                  <p className={mediaStyles['media-description']}>{item.description}</p>
-                  <div className={`${mediaStyles['media-meta']} ${mediaStyles['media-meta-olive']}`}>
+                  <h3 className={mediaStyles["media-title"]}>{item.title}</h3>
+                  <p className={mediaStyles["media-description"]}>
+                    {item.description}
+                  </p>
+                  <div
+                    className={`${mediaStyles["media-meta"]} ${mediaStyles["media-meta-olive"]}`}
+                  >
                     <span>{item.service}</span>
                   </div>
                 </div>
@@ -53,5 +69,5 @@ export function Portfolio({ onSelectMedia }: PortfolioProps) {
         </Rail>
       </div>
     </section>
-  )
+  );
 }

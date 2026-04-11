@@ -1,16 +1,22 @@
-import { PawPrint } from 'lucide-react'
+import { PawPrint } from "lucide-react";
 
-import { assets, niches } from '../../data/siteContent'
-import { Intro } from '../Intro/Intro'
+import { assets, niches } from "../../data/siteContent";
+import { useReveal } from "../../hooks/useReveal";
+import { Intro } from "../Intro/Intro";
 
-import styles from './Niches.module.css'
+import styles from "./Niches.module.css";
 
 export function Niches() {
+  const ref = useReveal<HTMLElement>();
+
   return (
-    <section className="section section-dark">
-      <div className={`container ${styles['dark-feature-grid']}`}>
+    <section ref={ref} className="section section-dark reveal">
+      <div className={`container ${styles["dark-feature-grid"]}`}>
         <article className="media-frame media-frame-dark">
-          <img src={assets.hipismo} alt="Profissional com cavalo em ambiente equestre premium" />
+          <img
+            src={assets.hipismo}
+            alt="Profissional com cavalo em ambiente equestre premium"
+          />
         </article>
         <div className="content-stack">
           <Intro
@@ -19,9 +25,9 @@ export function Niches() {
             description="Cada segmento tem sua linguagem. Nós falamos todas elas com leitura de mercado, repertório visual e estratégia."
             light
           />
-          <div className={styles['niches-grid']}>
+          <div className={styles["niches-grid"]}>
             {niches.map((item) => (
-              <div key={item} className={styles['niche-pill']}>
+              <div key={item} className={styles["niche-pill"]}>
                 <PawPrint size={16} />
                 <span>{item}</span>
               </div>
@@ -30,5 +36,5 @@ export function Niches() {
         </div>
       </div>
     </section>
-  )
+  );
 }

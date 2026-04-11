@@ -1,12 +1,15 @@
-import { testimonials } from '../../data/siteContent'
-import { Intro } from '../Intro/Intro'
-import { Rail } from '../Rail/Rail'
+import { testimonials } from "../../data/siteContent";
+import { useReveal } from "../../hooks/useReveal";
+import { Intro } from "../Intro/Intro";
+import { Rail } from "../Rail/Rail";
 
-import styles from './Testimonials.module.css'
+import styles from "./Testimonials.module.css";
 
 export function Testimonials() {
+  const ref = useReveal<HTMLElement>();
+
   return (
-    <section className="section section-dark">
+    <section ref={ref} className="section section-dark reveal">
       <div className="container content-stack-lg">
         <Intro
           eyebrow="Depoimentos"
@@ -16,16 +19,25 @@ export function Testimonials() {
         />
         <Rail>
           {testimonials.map((item, index) => (
-            <article key={`${item.author}-${index}`} className={styles['testimonial-card']}>
-              <div className={styles['testimonial-header']}>
-                <img src={item.image} alt="Depoimento cliente" className={styles['testimonial-image']} />
-                <span className={styles['testimonial-author']}>{item.author}</span>
+            <article
+              key={`${item.author}-${index}`}
+              className={styles["testimonial-card"]}
+            >
+              <div className={styles["testimonial-header"]}>
+                <img
+                  src={item.image}
+                  alt="Depoimento cliente"
+                  className={styles["testimonial-image"]}
+                />
+                <span className={styles["testimonial-author"]}>
+                  {item.author}
+                </span>
               </div>
-              <p className={styles['testimonial-quote']}>“{item.quote}”</p>
+              <p className={styles["testimonial-quote"]}>“{item.quote}”</p>
             </article>
           ))}
         </Rail>
       </div>
     </section>
-  )
+  );
 }
